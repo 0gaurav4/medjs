@@ -8,7 +8,7 @@ import { lusitana } from '@/app/ui/fonts';
 
 const iconMap = {
   collected: BanknotesIcon,
-  customers: UserGroupIcon,
+  ai: UserGroupIcon,
   pending: ClockIcon,
   invoices: InboxIcon,
 };
@@ -37,7 +37,7 @@ export function Card({
 }: {
   title: string;
   value: number | string;
-  type: 'invoices' | 'customers' | 'pending' | 'collected';
+  type: 'invoices' | 'ai' | 'pending' | 'collected';
 }) {
   const Icon = iconMap[type];
 
